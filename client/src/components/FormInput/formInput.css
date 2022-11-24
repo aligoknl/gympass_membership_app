@@ -1,0 +1,15 @@
+.club-line-error-message {
+  font-size: 12px;
+  padding: 0.3rem;
+  margin-left: 1rem;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"] ~ .club-line-error-message {
+  display: block;
+}
+
+.club-line-title {
+  margin-left: 0.5rem;
+}

@@ -1,0 +1,48 @@
+.my-clubs {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  margin: 3rem 1rem 20rem 1rem;
+}
+.my-clubs-title {
+  text-align: center;
+  margin: 2rem;
+}
+
+.my-clubs-error {
+  color: red;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.my-clubs-loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+.my-clubs-list {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.my-clubs-no-club-message {
+  margin: 2rem;
+  color: tomato;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 900px) {
+  .my-clubs-no-club-message {
+    margin: 10rem;
+    color: tomato;
+    text-align: center;
+    font-size: 24px;
+  }
+}

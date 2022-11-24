@@ -1,0 +1,72 @@
+.mainbox {
+  background: linear-gradient(
+    to right,
+    hsl(39deg 96% 49% / 80%),
+    50%,
+    hsla(9, 100%, 64%, 70%)
+  );
+  min-height: 100vh;
+  min-width: 100%;
+  margin-top: 3rem;
+}
+.number-dumbbell {
+  display: flex;
+  justify-content: center;
+}
+
+.number-four-first {
+  color: #ffffff;
+  font-size: 8rem;
+}
+
+.dumbbell {
+  font-size: 6rem;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.number-four-second {
+  color: #ffffff;
+  font-size: 8rem;
+}
+
+.page-not-found-message {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 3rem;
+}
+.go-home {
+  margin: 2rem;
+  font-size: 1rem;
+}
+.home-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+.home-link:visited {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 900px) {
+  .number-four-first {
+    font-size: 11rem;
+  }
+
+  .dumbbell {
+    font-size: 8.5rem;
+    padding: 3rem;
+  }
+
+  .number-four-second {
+    font-size: 11rem;
+  }
+
+  .page-not-found-message {
+    font-size: 2rem;
+    padding-bottom: 3rem;
+  }
+}

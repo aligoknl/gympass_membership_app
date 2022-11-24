@@ -1,0 +1,244 @@
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar {
+  background-color: #fff;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  cursor: pointer;
+}
+
+.icon:last-child {
+  margin: 0 2rem;
+}
+
+.menu-bars {
+  margin-left: 1.3rem;
+  font-size: 2rem;
+  background: none;
+}
+.menu-bars-close {
+  font-size: 2rem;
+  background: none;
+}
+.nav-menu {
+  background-color: #fff;
+  width: 25rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -500%;
+  transition: 100ms;
+  padding-left: 1rem;
+  z-index: 2;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+.buttons-nav {
+  display: none;
+}
+.buttons-hamburger {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+.button-nav {
+  background-color: #000;
+  color: var(--clr-green);
+  border-radius: 0.65rem;
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 2rem;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  margin-left: 1rem;
+  width: 8rem;
+}
+.button-nav:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.button-hamburger {
+  background-color: #000;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  color: var(--clr-green);
+  border-radius: 10px;
+  padding: 0.4rem 2rem;
+  margin: 0.5rem 0rem 3rem 0rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  width: 8rem;
+}
+.button-hamburger:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.links {
+  background-color: #fff;
+  height: 5rem;
+  align-self: flex-start;
+  align-items: center;
+  display: none;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0.5rem;
+  height: 2.5rem;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: center;
+  padding-top: 0.5rem;
+  height: 3rem;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  margin: 0.6rem 2rem 0rem 0rem;
+  font-size: 22px;
+}
+
+.nav-text:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.nav-text-hamburger {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 0.4rem;
+  height: 2.5rem;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid;
+  margin: 0.5rem 3rem 0rem 0rem;
+}
+
+.nav-text-hamburger:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #ffffff;
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.user-name-nav {
+  color: var(--clr-darkGreen);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+}
+
+.user-name-hamburger {
+  margin-top: 1rem;
+  color: var(--clr-darkGreen);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
+}
+
+.logo-img {
+  cursor: pointer;
+  width: 8rem;
+  height: 6rem;
+  margin: auto;
+}
+
+.logo-img-no-user {
+  cursor: pointer;
+  width: 12rem;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1rem 0;
+  }
+  .links {
+    display: flex;
+    align-self: center;
+    height: 2rem;
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+  .menu-bars {
+    display: none;
+  }
+  .logo-link {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .buttons-nav {
+    display: flex;
+    margin: 0 1rem 0 0;
+  }
+  .nav-text {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0rem 1rem 0rem 0rem;
+    font-size: 0.9rem;
+  }
+  .icon:last-child {
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .links {
+    margin-left: 2rem;
+  }
+  .nav-text {
+    margin: 0rem 2rem 0rem 0rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .links {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .links {
+    font-size: 1.4rem;
+  }
+  .logo-img {
+    margin: auto;
+  }
+}

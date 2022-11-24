@@ -1,0 +1,22 @@
+.home {
+  min-height: 100vh;
+}
+
+.description {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.description > h1 {
+  margin-bottom: 1rem;
+  text-indent: 2rem;
+}
+.description > h3 {
+  margin-bottom: 1rem;
+  text-indent: 2rem;
+}
+
+.description > p {
+  letter-spacing: 2px;
+  text-indent: 2rem;
+}

@@ -1,0 +1,59 @@
+{
+  "name": "virtuagym-assignment",
+  "version": "1.0.0",
+  "description": "virtuagym-check-in-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run start:server",
+    "start:server": "cd server && npm run start && cd ..",
+    "build": "echo \"Build script ignored! Heroku will use this and we want to have full control\"",
+    "build:client": "cd client && npm run build && cd ..",
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "cd client && npm run dev && cd ..",
+    "dev:server": "cd server && npm run dev && cd ..",
+    "setup": "npm run setup:client && npm run setup:server",
+    "setup:client": "cd client && npm run setup && cd ..",
+    "setup:server": "cd server && npm run setup && cd ..",
+    "heroku-postbuild": "npm run setup && npm run build:client",
+    "test": "npm run test:client && npm run test:server",
+    "test:client": "cd client && npm run test && cd ..",
+    "test:server": "cd server && npm run test && cd ..",
+    "test:cypress": "cypress run",
+    "code-style-check": "npm run code-style-check:client && npm run code-style-check:server",
+    "code-style-check:client": "cd client && npm run code-style-check && cd ..",
+    "code-style-check:server": "cd server && npm run code-style-check && cd ..",
+    "prepare": "husky install",
+    "pre-commit": "npm run pre-commit:client && npm run pre-commit:server",
+    "pre-commit:client": "cd client && npm run pre-commit && cd ..",
+    "pre-commit:server": "cd server && npm run pre-commit && cd ..",
+    "autofix": "npm run autofix:client && npm run autofix:server",
+    "autofix:client": "cd client && npm run autofix && cd ..",
+    "autofix:server": "cd server && npm run autofix && cd ..",
+    "lint": "npm run lint:client && npm run lint:server",
+    "lint:client": "cd client && npm run lint && cd ..",
+    "lint:server": "cd server && npm run lint && cd ..",
+    "cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recruitmentvg/aligoknl.git"
+  },
+  "author": "Ali Gok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/recruitmentvg/aligoknl/issues"
+  },
+  "homepage": "https://github.com/recruitmentvg/aligoknl#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.3",
+    "axios": "^1.1.3",
+    "cypress": "^11.1.0",
+    "husky": "^8.0.2"
+  }
+}

@@ -1,0 +1,87 @@
+.club-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0rem;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.club-detail {
+  display: flex;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2), 0px 15px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: white;
+  flex-direction: column;
+  padding: 2rem;
+  align-self: center;
+  margin: 2rem;
+}
+
+.club-detail-header {
+  display: flex;
+  flex-direction: column;
+}
+.club-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.65rem;
+  margin-top: 1rem;
+}
+
+.club-detail-title {
+  font-size: 1.1rem;
+  color: #4b710d;
+  margin: 0.5rem 0rem;
+}
+
+.club-detail-info {
+  font-size: 1rem;
+  border-bottom: 1px solid gray;
+  color: #000000;
+  text-align: justify;
+  letter-spacing: 2px;
+}
+
+.club-detail-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  gap: 1rem;
+}
+
+.club-detail-checkin-button {
+  background-color: #b0fc38;
+  color: #000;
+  border-radius: 10px;
+  padding: 0.4rem 2rem;
+  font-family: "Poppins", sans-serif;
+  margin: 2rem 2rem;
+  width: 10rem;
+  text-transform: capitalize;
+}
+.club-detail-checkin-button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.club-detail-signup {
+  margin: 2rem;
+  text-align: center;
+}
+.club-detail-signup-here {
+  color: #b0fc38;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+  .club-detail {
+    width: 40rem;
+    margin: 2rem;
+  }
+  .club-image {
+    max-height: 25rem;
+    width: auto;
+  }
+}

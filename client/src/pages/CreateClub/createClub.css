@@ -1,0 +1,117 @@
+.create-club-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.create-club {
+  margin: 3rem;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  align-self: center;
+  background-color: #ffffff;
+}
+.create-club-header {
+  margin-top: 2rem;
+  text-align: center;
+  color: #b0fc38;
+}
+
+.club-line {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.create-club-input {
+  border-bottom: 1px solid #000000;
+  outline: none;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 0.5rem;
+}
+
+.create-club-tag-title {
+  margin-left: 0.5rem;
+}
+
+.create-club-success {
+  padding: 1.5rem;
+  text-align: center;
+  color: hsl(120, 100%, 25%);
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  width: 60%;
+  background-color: hsla(120, 100%, 25%, 0.2);
+}
+
+.create-club-submit {
+  background-color: #b0fc38;
+  color: #000;
+  border-radius: 10px;
+  padding: 0.4rem 2rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  width: 8rem;
+  align-self: center;
+  margin: 3rem;
+}
+
+.club-line-description {
+  padding: 0.5rem;
+  border-radius: 20px;
+  border-bottom: 1px solid #000000;
+  outline: none;
+}
+
+input::file-selector-button {
+  background-color: #000000;
+  color: #b0fc38;
+  border-radius: 10px;
+  padding: 0.3rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.create-club-image-preview {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 20px;
+  margin: 1rem 0 0 0.5rem;
+}
+
+.create-club-input-photo {
+  margin-left: 0.5rem;
+}
+
+.create-club-description-tag {
+  margin-left: 0.5rem;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .create-club-input-date {
+    width: 50%;
+  }
+  .create-club {
+    width: 30rem;
+  }
+  .create-club-tags {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .create-club-input-date {
+    width: 40%;
+  }
+  .create-club {
+    width: 40rem;
+  }
+}
