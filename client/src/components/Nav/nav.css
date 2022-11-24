@@ -216,6 +216,10 @@
   .icon:last-child {
     margin: 0 2rem;
   }
+
+  .logo-img-no-user {
+    margin-left: 25rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -225,6 +229,9 @@
   .nav-text {
     margin: 0rem 2rem 0rem 0rem;
     font-size: 1rem;
+  }
+  .logo-img-no-user {
+    margin-left: 30rem;
   }
 }
 
