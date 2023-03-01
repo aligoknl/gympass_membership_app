@@ -1,6 +1,6 @@
-# Virtuagym-Assignment GYMPASS
+# GYMPASS MEMBERSHIP APP
 
-This is the project for the Virtuagym I did using the MERN stack. A quick guide to what I built:
+This is a project used the MERN stack. A quick guide to what I built:
 
 Gympass
 
