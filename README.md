@@ -19,7 +19,7 @@ RESTful API endpoints to perform CRUD operations.
 - When the user checks in, an invoice line gets created for the month’s invoice. If the
   invoice doesn’t exist, it gets created
 
-[Click here for the Demo version](https://gympass-membership.herokuapp.com/)
+Because my Heroku account has end, currently there is no demo for this app.
 
 # Built with
 
